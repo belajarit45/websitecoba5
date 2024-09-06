@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Berita</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <img src="images/logo.png" alt="Logo">
+        </div>
+        <div class="header-center">
+            <input type="text" id="search" placeholder="Cari artikel...">
+            <button onclick="searchArticle()">Cari</button>
+        </div>
+        <div class="header-right">
+            <img src="images/user-icon.png" alt="User Icon" onclick="toggleUserMenu()">
+        </div>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#">Berita</a></li>
+            <li><a href="#">Tren</a></li>
+            <li><a href="#">Gaya Hidup</a></li>
+            <li><a href="#">Kesehatan</a></li>
+            <li><a href="#">Makanan</a></li>
+            <li><a href="#">Edukasi</a></li>
+        </ul>
+    </nav>
+    
+    <aside>
+        <div id="trending">
+            <h3>Trending</h3>
+            <!-- Dynamic trending keywords here -->
+        </div>
+        <div id="headline-slider">
+            <img src="images/headline1.jpg" alt="Headline">
+            <!-- Dynamic headline images here -->
+        </div>
+    </aside>
+
+    <main>
+        <article>
+            <img src="images/news1.jpg" alt="News Image">
+            <div class="news-content">
+                <h2>Judul Berita</h2>
+                <p>Isi berita...</p>
+                <span>Tanggal Upload: 2024-09-06</span>
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Ketentuan Penggunaan</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+        <p>Copyright 2008 - 2024 PT. Kompas Cyber Media (Kompas Gramedia Digital Group). All Rights Reserved.</p>
+    </footer>
+
+    <div id="user-menu" style="display: none;">
+        <a href="php/login.php">Login</a>
+        <a href="php/register.php">Register</a>
+        <a href="#">Berikan Masukanmu</a>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
